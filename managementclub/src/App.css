@@ -1,0 +1,16 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-container {
+    flex: 1; /* This makes sure the main container grows to take available space */
+    display: flex;
+    flex-direction: column;
+  }
