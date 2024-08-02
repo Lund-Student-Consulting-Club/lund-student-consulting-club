@@ -1,6 +1,6 @@
 {
   "homepage": "https://dannolaius.github.io/management-club",
-  "name": "managementclub",
+  "name": "management-club",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
