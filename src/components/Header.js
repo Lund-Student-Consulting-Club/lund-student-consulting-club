@@ -9,7 +9,7 @@ const Header = () => {
         <div className="nav-container">
           <div className="logo">
             <Link to="/">
-              <img src='favicon.ico' alt="Home" className="home-image" />
+              <img src={`${process.env.PUBLIC_URL}/favicon.ico`}  alt="Home" className="home-image" />
             </Link>
           </div>
           <ul className="nav-links">
