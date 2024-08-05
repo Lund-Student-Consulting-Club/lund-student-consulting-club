@@ -2,27 +2,46 @@
 
 
 .home-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: url('../../public/suits.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('../../public/suits.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Align text to the left */
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .home-container {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .overlay-text {
-    position: absolute;
-    bottom: 0; /* Position at the bottom */
-    left: 0; /* Align text to the left */
-    color: white;
-    text-align: left;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    text-align: center;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better readability */
+    width: 100%;
   }
-  
+}
   h1 {
     font-size: 3rem;
     margin: 3rem;
