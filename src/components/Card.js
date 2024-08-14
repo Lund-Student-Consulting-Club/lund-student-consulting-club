@@ -1,13 +1,33 @@
 import React from 'react';
-import '../style.css'; 
-const Card = ({ image, name, position, link }) => {
+
+
+
+const Card = ({ image, name, position, link, email }) => {
   return (
-    <div className="card">
-      <img src={image} alt={`${name}`} />
-      <h3>{name}</h3>
-      <p>{position}</p>
-      <a href={link}><img src={`${process.env.PUBLIC_URL}/linkedin.png`}  className='linkedin-logo'></img></a>
-      
+    <div className="card mb-4">
+      <img src={image} alt={`${name}`} className="card-img-top img-responsive" />
+      <div className="card-body text-center">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">{position}</p>
+        <div className="d-flex justify-content-center">
+          <a 
+            href={link}  
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/linkedin.png`}
+              className="icon"/>
+              
+           </a>
+          <a
+            href={`mailto:${email}`} 
+          >
+            <img 
+            src={`${process.env.PUBLIC_URL}/email.png`}
+            className='icon'
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
