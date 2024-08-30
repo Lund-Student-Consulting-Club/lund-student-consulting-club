@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import { ScrollProvider, ScrollContext } from './components/ScrollContext';
+import { ScrollProvider } from './components/ScrollContext';
 
 function App() {
   
