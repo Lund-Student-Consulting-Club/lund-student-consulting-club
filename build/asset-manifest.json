@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/management-club/static/css/main.24bca9ab.css",
-    "main.js": "/management-club/static/js/main.8f309f99.js",
+    "main.css": "/management-club/static/css/main.297f3637.css",
+    "main.js": "/management-club/static/js/main.39eebe0b.js",
     "static/js/453.73a96755.chunk.js": "/management-club/static/js/453.73a96755.chunk.js",
-    "static/media/suits.png": "/management-club/static/media/suits.c2f6c6bd5f18e804966a.png",
     "index.html": "/management-club/index.html",
-    "main.24bca9ab.css.map": "/management-club/static/css/main.24bca9ab.css.map",
-    "main.8f309f99.js.map": "/management-club/static/js/main.8f309f99.js.map",
+    "main.297f3637.css.map": "/management-club/static/css/main.297f3637.css.map",
+    "main.39eebe0b.js.map": "/management-club/static/js/main.39eebe0b.js.map",
     "453.73a96755.chunk.js.map": "/management-club/static/js/453.73a96755.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24bca9ab.css",
-    "static/js/main.8f309f99.js"
+    "static/css/main.297f3637.css",
+    "static/js/main.39eebe0b.js"
   ]
 }

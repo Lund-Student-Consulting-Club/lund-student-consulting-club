@@ -1,27 +1,27 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import Home from './components/Home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Home from './components/Home';
 import Footer from './components/Footer';
-import About from './components/About';
-import Contact from './components/Contact';
-import './App.css';
-
+import { ScrollProvider, ScrollContext } from './components/ScrollContext';
 
 function App() {
+  
   return (
     <Router basename='/management-club'>
-      <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} /> 
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer></Footer>
-      </div>
+      <ScrollProvider>
+        <div className="App">
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} /> 
+            </Routes>
+          </main>
+          <div>
+            <Footer />
+          </div>
+        </div>
+      </ScrollProvider>
     </Router>
   );
 }

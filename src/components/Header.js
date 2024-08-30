@@ -1,19 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useContext} from 'react';
+
+import { Link as Linkerino } from 'react-router-dom';
+import { ScrollContext } from './ScrollContext';
+
+
 
 const Header = () => {
+  const { aboutSectionRef } = useContext(ScrollContext);
+
+  const scrollToAbout = () => {
+    if (aboutSectionRef.current) {
+      console.log("Offset Top:", aboutSectionRef.current.offsetTop);
+      window.scrollTo({
+        top: aboutSectionRef.current.offsetTop,
+        behavior: 'smooth',
+        
+      });
+    } else {
+      console.error('Ref is not attached to any element');
+    }  
+  }
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,  
+      behavior: 'smooth'  
+    });
+  };
   return (
+    
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Linkerino className="navbar-brand" to="/">
             <img
               src={`${process.env.PUBLIC_URL}/favicon.ico`}
               alt="Home"
               className="home-image"
               style={{ width: '4em', height: '4em' }}
             />
-          </Link>
+          </Linkerino>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,10 +54,14 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <button className="nav-link" onClick={scrollToAbout}>
+                  About
+                </button>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <button className="nav-link" onClick={scrollToBottom}>
+                  Contact
+                </button>
               </li>
             </ul>
           </div>
