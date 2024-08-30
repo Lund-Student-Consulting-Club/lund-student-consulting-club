@@ -12,33 +12,28 @@ const Home = () => {
     
     <div className="bg-light">
       <div className="position-relative">
-        <div
-         className=''
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/favicon.ico)`,
-            backgroundSize: 'contain',  
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            height: '100vh',
-            position: 'relative',
-            overflow: 'auto',
-            
-            
-          }}
-        >
-          <div className="position-absolute bottom-0 start-0 end-0 p-4 d-flex flex-column align-items-start text-white bg-dark bg-opacity-50">
-            <h1 className="display-4 mb-4">Welcome to Lund Student Consulting Club</h1>
-            <p className="lead mb-3">
-            Bridging Knowledge and Practice for Future Consultants
-            </p>
-            
+    <div
+      className="d-flex justify-content-center align-items-end"
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/favicon.ico)`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '100vh',
+        position: 'relative',
+      }}
+    >
+      <div className="text-center text-dark">
+        <h1 className="display-4 mb-4">Welcome to Lund Student Consulting Club</h1>
+        <p className="lead mb-3">
+          Bridging Knowledge and Practice for Future Consultants
+        </p>
           </div>
         </div>
       </div>
       <div className="about" ref={ aboutSectionRef }> 
         <About />
       </div>
-      <h1 className=" display-4 text-center mb-4">Our Members</h1>
         <CardSection />
     </div>
   );
