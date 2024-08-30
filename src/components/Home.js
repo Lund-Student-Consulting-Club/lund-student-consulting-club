@@ -21,6 +21,7 @@ const Home = () => {
             backgroundRepeat: 'no-repeat',
             height: '100vh',
             position: 'relative',
+            overflow: 'auto',
             
             
           }}
