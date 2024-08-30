@@ -13,14 +13,15 @@ const Home = () => {
     <div className="bg-light">
       <div className="position-relative">
         <div
-          className="w-100"
+         className='w-100 bg-cover '
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/favicon.ico)`,
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',  
             backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            backgroundRepeat: 'no-repeat', 
             height: '100vh',
             position: 'relative',
+            
           }}
         >
           <div className="position-absolute bottom-0 start-0 end-0 p-4 d-flex flex-column align-items-start text-white bg-dark bg-opacity-50">
