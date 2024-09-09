@@ -8,7 +8,7 @@ import { ScrollProvider } from './components/ScrollContext';
 function App() {
   
   return (
-    <Router basename='/management-club'>
+    <Router basename='/'>
       <ScrollProvider>
         <div className="App">
           <Header />
