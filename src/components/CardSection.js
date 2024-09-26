@@ -3,11 +3,11 @@ import Card from './Card';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const people = [
-  { image: `${process.env.PUBLIC_URL}/seb.jpg`, name: 'Sebastian Offnegårdh', position: 'CEO', link: 'https://www.linkedin.com/in/sebastian-offneg%C3%A5rdh-b904031a5/', email: "who@gmail.com" },
-  { image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Sixten Ogenborn', position: 'Vice President & Head of Finance', link: '', email: "balls@gmail.com"},
-  { image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Pontus Sennevall', position: 'Head of Case Development', link: 'https://www.linkedin.com/in/pontus-sennevall-882892149/', email: "balls@gmail.com"},
-  { image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Daniel Lai Wikström', position: 'Head of IT', link: 'https://www.linkedin.com/in/daniel-wikstr%C3%B6m-a78104126/', email: "cares@gmail.com" },
-
+  { image: `${process.env.PUBLIC_URL}/seb.jpg`, name: 'Sebastian Offnegårdh', position: 'Founder', link: 'https://www.linkedin.com/in/sebastian-offnegardh/', email: "who@gmail.com" },
+  { image: `${process.env.PUBLIC_URL}/sixten.jpg`, name: 'Sixten Ogenborn', position: 'Vice President & Head of Finance', link: 'https://www.linkedin.com/in/sixten-ogenborn-21777a200/', email: "balls@gmail.com"},
+  { image: `${process.env.PUBLIC_URL}/pontus.jpg`, name: 'Pontus Sennevall', position: 'Head of Case Development', link: 'https://www.linkedin.com/in/pontus-sennevall-882892149/', email: "balls@gmail.com"},
+//{ image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Daniel Lai Wikström', position: 'Head of IT', link: 'https://www.linkedin.com/in/daniel-wikstr%C3%B6m-a78104126/', email: "cares@gmail.com" },
+  { image: `${process.env.PUBLIC_URL}/emil.jpg`, name: 'Emil Antilla', position: 'Head of Corporate Relations', link: 'https://www.linkedin.com/in/emil-anttila-523aa916b/'}
 ];
 
 const CardSection = () => {

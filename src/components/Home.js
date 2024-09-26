@@ -15,16 +15,16 @@ const Home = () => {
     <div
       className="d-flex justify-content-center align-items-end"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/favicon.ico)`,
-        backgroundSize: 'contain',
+        backgroundImage: `url(${process.env.PUBLIC_URL}/group_photo.jpg)`,
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         height: '100vh',
         position: 'relative',
       }}
     >
-      <div className="text-center text-dark">
-        <h1 className="display-4 mb-4">Welcome to Lund Student Consulting Club</h1>
+      <div className="text-center text-white">
+        <h1 className="display-3 mb-4">Welcome to Lund Student Consulting Club</h1>
         <p className="lead mb-3">
           Bridging Knowledge and Practice for Future Consultants
         </p>
