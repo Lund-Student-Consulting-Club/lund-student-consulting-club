@@ -13,7 +13,7 @@ const Card = ({ image, name, position, link, email }) => {
       </div>
       <div className="card-body text-center">
         <h5 className="card-title">{name}</h5>
-        <p className="card-text">{position}</p>
+        <p className="card-text small" style={{wordBreak: 'break-word'}}>{position}</p>
         <div className="d-flex justify-content-center">
           <a href={link} target="_blank" rel="noopener noreferrer">
             <img

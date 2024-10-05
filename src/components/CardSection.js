@@ -3,11 +3,12 @@ import Card from './Card';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const people = [
-  { image: `${process.env.PUBLIC_URL}/seb.jpg`, name: 'Sebastian Offnegårdh', position: 'Founder', link: 'https://www.linkedin.com/in/sebastian-offnegardh/', email: "who@gmail.com" },
-  { image: `${process.env.PUBLIC_URL}/sixten.jpg`, name: 'Sixten Ogenborn', position: 'Vice President & Head of Finance', link: 'https://www.linkedin.com/in/sixten-ogenborn-21777a200/', email: "balls@gmail.com"},
-  { image: `${process.env.PUBLIC_URL}/pontus.jpg`, name: 'Pontus Sennevall', position: 'Head of Case Development', link: 'https://www.linkedin.com/in/pontus-sennevall-882892149/', email: "balls@gmail.com"},
+  { image: `${process.env.PUBLIC_URL}/seb.jpg`, name: 'Sebastian Offnegårdh', position: 'Pres. & Head of Management Consulting', link: 'https://www.linkedin.com/in/sebastian-offnegardh/', email: "" },
+  { image: `${process.env.PUBLIC_URL}/sixten.jpg`, name: 'Sixten Ogenborn', position: 'Vice President & Head of Finance', link: 'https://www.linkedin.com/in/sixten-ogenborn-21777a200/', email: ""},
+  { image: `${process.env.PUBLIC_URL}/pontus.jpg`, name: 'Pontus Sennevall', position: 'Head of Case Development', link: 'https://www.linkedin.com/in/pontus-sennevall-882892149/', email: ""},
 //{ image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Daniel Lai Wikström', position: 'Head of IT', link: 'https://www.linkedin.com/in/daniel-wikstr%C3%B6m-a78104126/', email: "cares@gmail.com" },
-  { image: `${process.env.PUBLIC_URL}/emil.jpg`, name: 'Emil Antilla', position: 'Head of Corporate Relations', link: 'https://www.linkedin.com/in/emil-anttila-523aa916b/'}
+  { image: `${process.env.PUBLIC_URL}/emil.jpg`, name: 'Emil Anttila', position: 'Head of Corporate Relations', link: 'https://www.linkedin.com/in/emil-anttila-523aa916b/', email: ""},
+  { image: `${process.env.PUBLIC_URL}/filip.jpg`, name: "Filip Strandberg", position: 'Head of Treasury', link:"https://www.linkedin.com/in/filip-strandberg-304675175/", email: ""}
 ];
 
 const CardSection = () => {

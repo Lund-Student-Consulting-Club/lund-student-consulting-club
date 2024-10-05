@@ -12,9 +12,9 @@ const Footer = () => {
             <h5>Our Address</h5>
             <p>
               Lund Student Consulting Club<br />
-              Sandgatan 2<br />
+              Finalgatan 17 B<br />
               Lund, Sweden<br />
-              Postal Code: 223 50
+              Postal Code: 222 74
             </p>
           </div>
          
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="col-md-4 mb-3">
             <h5>Contact</h5>
             <p>
-              Email: <a href="mailto:info@example.com" className="text-white">info@example.com</a><br />
+              Email: <a href="mailto:lundstudentconsultingclub.com" className="text-white">lundstudentconsultingclub@gmail.com </a><br />
               Phone: <a href="tel:+46723126995" className="text-white">+46 72-312 69 95</a>
             </p>
           </div>
