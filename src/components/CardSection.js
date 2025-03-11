@@ -8,7 +8,8 @@ const people = [
   { image: `${process.env.PUBLIC_URL}/pontus.jpg`, name: 'Pontus Sennevall', position: 'Head of Case Development', link: 'https://www.linkedin.com/in/pontus-sennevall-882892149/', email: ""},
 //{ image: `${process.env.PUBLIC_URL}/blank.png`, name: 'Daniel Lai Wikström', position: 'Head of IT', link: 'https://www.linkedin.com/in/daniel-wikstr%C3%B6m-a78104126/', email: "cares@gmail.com" },
   { image: `${process.env.PUBLIC_URL}/emil.jpg`, name: 'Emil Anttila', position: 'Head of Corporate Relations', link: 'https://www.linkedin.com/in/emil-anttila-523aa916b/', email: ""},
-  { image: `${process.env.PUBLIC_URL}/filip.jpg`, name: "Filip Strandberg", position: 'Head of Treasury', link:"https://www.linkedin.com/in/filip-strandberg-304675175/", email: ""}
+  { image: `${process.env.PUBLIC_URL}/filip.jpg`, name: "Filip Strandberg", position: 'Head of Treasury', link:"https://www.linkedin.com/in/filip-strandberg-304675175/", email: ""},
+  { image: `${process.env.PUBLIC_URL}/oscar.jpg`, name: "Oscar Ek", position: 'Board Member', link:"https://www.linkedin.com/in/oscarek2002/", email:""}
 ];
 
 const CardSection = () => {
